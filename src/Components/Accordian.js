@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Crd1() {
+export default function Accordian() {
     const [accordianIndex, setaccordianIndex] = useState(null);
 
     const toggleAccordion = (index) => {
