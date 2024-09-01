@@ -15,39 +15,31 @@ import Slider from "./Components/Slider";
 
 function App() {
   return (
-    <>
-      {/* // <div className="App">
-    //   <h1>Tasks list</h1>
-    //   <Link to={'/card'}>Task 1- Accordian </Link>
-    //    <Crd1/>
-    // </div> */}
-
-      <Router>
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            path="/accordian"
-            element={<Accordian />}
-          />
-          <Route
-            path="/slider"
-            element={<Slider />}
-          />
-          <Route
-            path="/scramble"
-            element={<Scramble />}
-          />
-          <Route
-            path="*"
-            element={<Navigate to="/" />}
-          />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/accordian"
+          element={<Accordian />}
+        />
+        <Route
+          path="/slider"
+          element={<Slider />}
+        />
+        <Route
+          path="/scramble"
+          element={<Scramble />}
+        />
+        <Route
+          path="*"
+          element={<Navigate to="/" />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
